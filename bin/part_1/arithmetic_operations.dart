@@ -36,4 +36,6 @@ void main() {
   product *= int.parse(stdin.readLineSync()!);
 
   print("The product is $product");
+
+  ///Programming excercise: Sum and product
 }
