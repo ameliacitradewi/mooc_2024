@@ -88,4 +88,6 @@ void main() {
     print("$fahrenheit degress Fahreinheit equals $celcius degress celcius");
     print("Brr! It's cold in here!");
   }
+
+  ///Programming excercise: Daily wages
 }
