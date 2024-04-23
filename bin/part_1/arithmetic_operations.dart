@@ -81,4 +81,15 @@ void main() {
 
   print(
       "Average food expenditure:\nDaily: ${(((eatAtCafe * lunch) + groceries) / 7)} euros\nWeekly: ${(eatAtCafe * lunch) + groceries} euros");
+
+  ///Programming excercise: Students in groups]
+  int students, group;
+
+  stdout.write("How many students on the course? ");
+  students = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Desired group size? ");
+  group = int.parse(stdin.readLineSync()!);
+
+  print("Number of groups formed: ${(students / group).ceil()}");
 }
