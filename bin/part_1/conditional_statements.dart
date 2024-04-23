@@ -15,9 +15,8 @@ void main() {
 
   if (absoluteValue < 0) {
     print("${absoluteValue * -1}");
-  } else {
-    print("$absoluteValue");
   }
+  print("$absoluteValue");
 
   ///Programming excercise: Soup or no soup
   double soupPrice = 5.9;
@@ -104,7 +103,6 @@ void main() {
   if (day == "Sunday" || day == "sunday") {
     dailyWage *= 2;
   }
-
   print("Daily wages: $dailyWage euros");
 
   ///Programming excercise: Loyalty bonus
