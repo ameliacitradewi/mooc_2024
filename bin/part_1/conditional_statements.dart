@@ -49,4 +49,16 @@ void main() {
   } else {
     print("Thank you!");
   }
+
+  ///Programming excercise: Calculator
+  int number1, number2;
+
+  stdout.write("Number 1: ");
+  number1 = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Number 1: ");
+  number2 = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Operation: ");
+  String? operator = stdin.readLineSync();
 }
