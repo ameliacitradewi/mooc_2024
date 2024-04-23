@@ -25,7 +25,7 @@ void main() {
   stdout.write("Please tell me your name: ");
   String? name = stdin.readLineSync();
 
-  if (name != "Jerry") {
+  if (name != "Jerry" && name != "jerry") {
     stdout.write("How many portions of soup? ");
     int soup = int.parse(stdin.readLineSync()!);
     print("The total cost is ${(soup * soupPrice).toStringAsFixed(1)}");
