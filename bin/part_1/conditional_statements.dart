@@ -102,8 +102,21 @@ void main() {
   double dailyWage = wage * hours;
 
   if (day == "Sunday" || day == "sunday") {
-    print("Daily wages: ${dailyWage * 2} euros");
-  } else {
-    print("Daily wages: $dailyWage euros");
+    dailyWage *= 2;
   }
+
+  print("Daily wages: $dailyWage euros");
+
+  ///Programming excercise: Loyalty bonus
+  stdout.write("How many points are on your card? ");
+  double points = double.parse(stdin.readLineSync()!);
+
+  if (points < 100) {
+    points *= 1.1;
+    print("Your bonus is 10 %");
+  } else {
+    points *= 1.15;
+    print("Your bonus is 15 %");
+  }
+  print("You now have ${points.toStringAsFixed(1)} points");
 }
