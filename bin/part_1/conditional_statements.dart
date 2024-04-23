@@ -101,5 +101,9 @@ void main() {
 
   double dailyWage = wage * hours;
 
-  if (day) {}
+  if (day == "Sunday" || day == "sunday") {
+    print("Daily wages: ${dailyWage * 2} euros");
+  } else {
+    print("Daily wages: $dailyWage euros");
+  }
 }
