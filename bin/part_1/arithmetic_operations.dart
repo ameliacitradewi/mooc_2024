@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:io';
 
 void main() {
@@ -29,10 +30,10 @@ void main() {
   stdout.write("Please type in the first number: ");
   product *= int.parse(stdin.readLineSync()!);
 
-  stdout.write("Please type in the first number: ");
+  stdout.write("Please type in the second number: ");
   product *= int.parse(stdin.readLineSync()!);
 
-  stdout.write("Please type in the first number: ");
+  stdout.write("Please type in the third number: ");
   product *= int.parse(stdin.readLineSync()!);
 
   print("The product is $product");
@@ -47,5 +48,24 @@ void main() {
   print("The sum of the numbers: ${number1 + number2}");
   print("The product of the numbers: ${number1 * number2}");
 
-  ///Programming excercise: Sum and product
+  ///Programming excercise: Sum and mean
+  int numbers1, numbers2, numbers3, numbers4, numbersTotal;
+  stdout.write("Number 1: ");
+  numbers1 = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Number 2: ");
+  numbers2 = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Number 1: ");
+  numbers3 = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Number 2: ");
+  numbers4 = int.parse(stdin.readLineSync()!);
+
+  numbersTotal = numbers1 + numbers2 + numbers3 + numbers4;
+
+  print(
+      "The sum of the numbers is $numbersTotal and the mean is ${(numbersTotal / 4).toStringAsFixed(1)}");
+
+  ///Programming excercise: Food expenditure
 }
