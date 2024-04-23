@@ -38,4 +38,14 @@ void main() {
   print("The product is $product");
 
   ///Programming excercise: Sum and product
+  stdout.write("Number 1: ");
+  int number1 = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Number 2: ");
+  int number2 = int.parse(stdin.readLineSync()!);
+
+  print("The sum of the numbers: ${number1 + number2}");
+  print("The product of the numbers: ${number1 * number2}");
+
+  ///Programming excercise: Sum and product
 }
