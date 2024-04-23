@@ -90,4 +90,16 @@ void main() {
   }
 
   ///Programming excercise: Daily wages
+  stdout.write("Hourly wage: ");
+  double wage = double.parse(stdin.readLineSync()!);
+
+  stdout.write("Hours worked: ");
+  int hours = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Day of the week: ");
+  String? day = stdin.readLineSync();
+
+  double dailyWage = wage * hours;
+
+  if (day) {}
 }
