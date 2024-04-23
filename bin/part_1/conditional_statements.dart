@@ -18,4 +18,19 @@ void main() {
   } else {
     print("$absoluteValue");
   }
+
+  ///Programming excercise: Soup or no soup
+  double soupPrice = 5.9;
+
+  stdout.write("Please tell me your name: ");
+  String? name = stdin.readLineSync();
+
+  if (name != "Jerry") {
+    stdout.write("How many portions of soup? ");
+    int soup = int.parse(stdin.readLineSync()!);
+    print("The total cost is ${(soup * soupPrice).toStringAsFixed(1)}");
+    print("Next, please!");
+  } else {
+    print("Next, please!");
+  }
 }
