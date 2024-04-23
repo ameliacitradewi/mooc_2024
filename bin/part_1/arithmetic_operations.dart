@@ -56,10 +56,10 @@ void main() {
   stdout.write("Number 2: ");
   numbers2 = int.parse(stdin.readLineSync()!);
 
-  stdout.write("Number 1: ");
+  stdout.write("Number 3: ");
   numbers3 = int.parse(stdin.readLineSync()!);
 
-  stdout.write("Number 2: ");
+  stdout.write("Number 4: ");
   numbers4 = int.parse(stdin.readLineSync()!);
 
   numbersTotal = numbers1 + numbers2 + numbers3 + numbers4;
@@ -68,4 +68,17 @@ void main() {
       "The sum of the numbers is $numbersTotal and the mean is ${(numbersTotal / 4).toStringAsFixed(1)}");
 
   ///Programming excercise: Food expenditure
+  stdout.write("How many times a week do you eat at the student cafetaria? ");
+  int eatAtCafe = int.parse(stdin.readLineSync()!);
+
+  double lunch, groceries;
+
+  stdout.write("The price of a typical student lunch? ");
+  lunch = double.parse(stdin.readLineSync()!);
+
+  stdout.write("How much money do you spend on groceries in a week? ");
+  groceries = double.parse(stdin.readLineSync()!);
+
+  print(
+      "Average food expenditure:\nDaily: ${(((eatAtCafe * lunch) + groceries) / 7)} euros\nWeekly: ${(eatAtCafe * lunch) + groceries} euros");
 }
