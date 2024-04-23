@@ -35,4 +35,18 @@ void main() {
   }
 
   ///Programming excercise: Order of magnitude
+  stdout.write("Please type in a number: ");
+  int magnitude = int.parse(stdin.readLineSync()!);
+
+  if (magnitude > 100 && magnitude < 1000) {
+    print("This number is smaller than 1000\nThank you!");
+  } else if (magnitude > 10 && magnitude < 1000) {
+    print(
+        "This number is smaller than 1000\nThis number is smaller than 100\nThank you!");
+  } else if (magnitude < 10) {
+    print(
+        "This number is smaller than 1000\nThis number is smaller than 100\nThis number is smaller than 10\nThank you!");
+  } else {
+    print("Thank you!");
+  }
 }
