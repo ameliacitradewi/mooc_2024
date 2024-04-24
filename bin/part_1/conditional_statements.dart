@@ -125,7 +125,7 @@ void main() {
   stdout.write("What is the weather forecast for tommorow?\nTemperature: ");
   temperature = int.parse(stdin.readLineSync()!);
 
-  stdout.write("Will it rain (yes/No): ");
+  stdout.write("Will it rain (Yes/No): ");
   rain = stdin.readLineSync()!;
 
   above20 = "Wear jeans and a T-shirt";
@@ -145,7 +145,7 @@ void main() {
     print(under5);
   }
 
-  if (rain == "yes") {
+  if (rain == "yes" || rain == "Yes") {
     print(ifRain);
   }
 }
