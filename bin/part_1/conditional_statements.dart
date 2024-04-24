@@ -126,7 +126,7 @@ void main() {
   temperature = int.parse(stdin.readLineSync()!);
 
   stdout.write("Will it rain (Yes/No): ");
-  rain = stdin.readLineSync()!;
+  rain = (stdin.readLineSync()!).toLowerCase();
 
   above20 = "Wear jeans and a T-shirt";
   above10 = "$above20\nI recommend a jumper as well";
@@ -145,7 +145,7 @@ void main() {
     print(under5);
   }
 
-  if (rain == "yes" || rain == "Yes") {
+  if (rain == "yes") {
     print(ifRain);
   }
 }
