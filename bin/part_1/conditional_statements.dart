@@ -96,11 +96,11 @@ void main() {
   int hours = int.parse(stdin.readLineSync()!);
 
   stdout.write("Day of the week: ");
-  String? day = stdin.readLineSync();
+  String day = (stdin.readLineSync()!).toLowerCase();
 
   double dailyWage = wage * hours;
 
-  if (day == "Sunday" || day == "sunday") {
+  if (day == "sunday") {
     dailyWage *= 2;
   }
   print("Daily wages: $dailyWage euros");
