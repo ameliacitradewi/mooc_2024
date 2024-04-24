@@ -14,7 +14,7 @@ void main() {
   int absoluteValue = int.parse(stdin.readLineSync()!);
 
   if (absoluteValue < 0) {
-    print("${absoluteValue * -1}");
+    absoluteValue *= -1;
   }
   print("$absoluteValue");
 
