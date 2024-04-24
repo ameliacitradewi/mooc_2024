@@ -117,4 +117,35 @@ void main() {
     print("Your bonus is 15 %");
   }
   print("You now have ${points.toStringAsFixed(1)} points");
+
+  ///Programming excercise: What to wear tommorrow
+  String rain, above20, above10, under10, under5, ifRain;
+  int temperature;
+
+  stdout.write("What is the weather forecast for tommorow?\nTemperature: ");
+  temperature = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Will it rain (yes/No): ");
+  rain = stdin.readLineSync()!;
+
+  above20 = "Wear jeans and a T-shirt";
+  above10 = "$above20\nI recommend a jumper as well";
+  under10 = "$above10\nTake a jacket with you";
+  under5 =
+      "$under10\nMake it a warm coat, actually\nI think gloves are in order";
+  ifRain = "Don't forget your umbrella!";
+
+  if (temperature >= 20) {
+    print(above20);
+  } else if (temperature >= 10 && temperature < 20) {
+    print(above10);
+  } else if (temperature < 10 && temperature > 5) {
+    print(under10);
+  } else {
+    print(under5);
+  }
+
+  if (rain == "yes") {
+    print(ifRain);
+  }
 }
