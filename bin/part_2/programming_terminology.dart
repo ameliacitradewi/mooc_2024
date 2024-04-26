@@ -13,4 +13,14 @@ void main() {
   }
 
   print("$number must be my lucky number!\nHave a nice day!");
+
+  ///Programming excercise: Number of characters
+  stdout.write("Please type in a word: ");
+  String word = (stdin.readLineSync()!).toLowerCase();
+
+  if (word.length > 1) {
+    print("There are ${word.length} letters in the word $word");
+  }
+
+  print("Thank you!");
 }
