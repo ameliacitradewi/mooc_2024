@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 void main() {
   ///Programming excercise: Orwell
@@ -150,4 +151,21 @@ void main() {
   }
 
   ///Programming excercise: Solving a quadratic equation
+  num x1, x2;
+  double a, b, c, discriminant;
+
+  stdout.write("Value of a: ");
+  a = double.parse(stdin.readLineSync()!);
+
+  stdout.write("Value of b: ");
+  b = double.parse(stdin.readLineSync()!);
+
+  stdout.write("Value of c: ");
+  c = double.parse(stdin.readLineSync()!);
+
+  discriminant = pow(b, 2) - (4 * a * c);
+  x1 = (-b + sqrt(discriminant)) / 2 * a;
+  x2 = (-b - sqrt(discriminant)) / 2 * a;
+
+  print("The roots are $x1 and $x2");
 }
