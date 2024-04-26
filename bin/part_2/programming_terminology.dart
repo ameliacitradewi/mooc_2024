@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:io';
 
 void main() {
@@ -23,4 +24,11 @@ void main() {
   }
 
   print("Thank you!");
+
+  ///Programming excercise: Typecasting
+  stdout.write("Please type in a number: ");
+  double rawNumber = double.parse(stdin.readLineSync()!);
+
+  print(
+      "Integer part: ${rawNumber.floor()}\nDecimal part: ${(rawNumber - (rawNumber.floor())).toStringAsFixed(2)}");
 }
