@@ -16,7 +16,7 @@ void main() {
 
   ///Programming excercise: Number of characters
   stdout.write("Please type in a word: ");
-  String word = (stdin.readLineSync()!).toLowerCase();
+  String word = stdin.readLineSync()!.toLowerCase();
 
   if (word.length > 1) {
     print("There are ${word.length} letters in the word $word");
