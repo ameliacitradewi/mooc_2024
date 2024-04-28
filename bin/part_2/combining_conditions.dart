@@ -73,4 +73,19 @@ void main() {
   } else {
     print("That year is not a leap year");
   }
+
+  ///Programming excercise: Alphabetically in the middle
+  stdout.write("1st letter: ");
+  String firstLetter = stdin.readLineSync()!;
+
+  stdout.write("2nd letter: ");
+  String secondLetter = stdin.readLineSync()!;
+
+  stdout.write("3rd letter: ");
+  String thirdLetter = stdin.readLineSync()!;
+
+  var letters = [firstLetter, secondLetter, thirdLetter];
+  letters.sort((a, b) => a.compareTo(b));
+
+  print("The letter in the middle is ${letters[1]}");
 }
