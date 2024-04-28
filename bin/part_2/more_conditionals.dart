@@ -28,13 +28,13 @@ void main() {
 
   ///Programming excercise: The elder
   stdout.write("Person 1:\nName: ");
-  String person1 = stdin.readLineSync()!;
+  String person1 = stdin.readLineSync()!.toLowerCase();
 
   stdout.write("Age: ");
   int age1 = int.parse(stdin.readLineSync()!);
 
   stdout.write("Person 2:\nName: ");
-  String person2 = stdin.readLineSync()!;
+  String person2 = stdin.readLineSync()!.toLowerCase();
 
   stdout.write("Age: ");
   int age2 = int.parse(stdin.readLineSync()!);
