@@ -52,12 +52,12 @@ void main() {
   stdout.write("Number: ");
   int number = int.parse(stdin.readLineSync()!);
 
-  if (number % 3 == 0) {
-    print("Fizz");
+  if (number % 5 == 0 && number % 3 == 0) {
+    print("FizzBuzz");
   } else if (number % 5 == 0) {
     print("Buzz");
-  } else if (number % 5 == 0 && number % 3 == 0) {
-    print("FizzBuzz");
+  } else if (number % 3 == 0) {
+    print("Fizz");
   } else {
     //do nothing
   }
