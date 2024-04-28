@@ -18,6 +18,14 @@ void main() {
   stdout.write("Please type in another number: ");
   int number2 = int.parse(stdin.readLineSync()!);
 
+  if (number1 > number2) {
+    print("The greater number is $number1");
+  } else if (number1 < number2) {
+    print("The greater number is $number2");
+  } else {
+    print("The numbers are equal");
+  }
+
   ///Programming excercise: The elder
   stdout.write("Person 1:\nName: ");
   String person1 = stdin.readLineSync()!;
