@@ -90,4 +90,6 @@ void main() {
   letters.sort((a, b) => a.compareTo(b));
 
   print("The letter in the middle is ${letters[1]}");
+
+  ///Programming excercise: Gift tax calculator
 }
