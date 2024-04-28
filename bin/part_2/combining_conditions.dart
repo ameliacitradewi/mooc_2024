@@ -14,4 +14,14 @@ void main() {
   }
 
   ///Programming excercise: Nephews
+  stdout.write("Please type in your name: ");
+  String nephews = stdin.readLineSync()!.toLowerCase();
+
+  if (nephews == "huey" || nephews == "dewey" || nephews == "louie") {
+    print("I think you might be one of Donald Duck's nephews.");
+  } else if (nephews == "morty" || nephews == "ferdie") {
+    print("I think you might be one of Mickey Mouse's nephews.");
+  } else {
+    print("You're not a nephew of any character I know of.");
+  }
 }
