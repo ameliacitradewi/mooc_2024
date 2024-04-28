@@ -10,4 +10,32 @@ void main() {
   } else {
     print("You are not of age!");
   }
+
+  ///Programming excercise: Greater than or equal to
+  stdout.write("Please type in the first number: ");
+  int number1 = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Please type in another number: ");
+  int number2 = int.parse(stdin.readLineSync()!);
+
+  ///Programming excercise: The elder
+  stdout.write("Person 1:\nName: ");
+  String person1 = stdin.readLineSync()!;
+
+  stdout.write("Age: ");
+  int age1 = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Person 2:\nName: ");
+  String person2 = stdin.readLineSync()!;
+
+  stdout.write("Age: ");
+  int age2 = int.parse(stdin.readLineSync()!);
+
+  if (age1 > age2) {
+    print("The elder is $person1");
+  } else if (age1 < age2) {
+    print("The elder is $person2");
+  } else {
+    print("$person1 and $person2 are the same age");
+  }
 }
