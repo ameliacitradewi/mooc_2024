@@ -75,14 +75,16 @@ void main() {
   }
 
   ///Programming excercise: Alphabetically in the middle
+  String firstLetter, secondLetter, thirdLetter;
+
   stdout.write("1st letter: ");
-  String firstLetter = stdin.readLineSync()!;
+  firstLetter = stdin.readLineSync()!;
 
   stdout.write("2nd letter: ");
-  String secondLetter = stdin.readLineSync()!;
+  secondLetter = stdin.readLineSync()!;
 
   stdout.write("3rd letter: ");
-  String thirdLetter = stdin.readLineSync()!;
+  thirdLetter = stdin.readLineSync()!;
 
   var letters = [firstLetter, secondLetter, thirdLetter];
   letters.sort((a, b) => a.compareTo(b));
