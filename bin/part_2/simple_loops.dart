@@ -70,6 +70,7 @@ void main() {
     if (enteredPIN != correctPIN) {
       print("Wrong");
     } else {
+      //nested conditionals
       if (attempts == 1) {
         print("Correct! It only took you one single attempt!");
       } else {
