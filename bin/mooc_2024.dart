@@ -1,15 +1,17 @@
 import 'dart:io';
 
 void main() {
-  int number = 5;
-  print("Countdown!");
+  stdout.write("Password: ");
+  String password = stdin.readLineSync()!;
 
   while (true) {
-    print(number);
-    number--;
+    stdout.write("Repeat password: ");
+    String repeatPassword = stdin.readLineSync()!;
 
-    if (number < 1) {
-      print("Now!");
+    if (repeatPassword != password) {
+      print("They do not match!");
+    } else {
+      print("User account created!");
       break;
     }
   }
