@@ -27,4 +27,20 @@ void main() {
       break;
     }
   }
+
+  ///Programming excercise: Fix the code: Countdown
+  int number = 5;
+  print("Countdown!");
+
+  while (true) {
+    print(number);
+    number--;
+
+    if (number < 1) {
+      print("Now!");
+      break;
+    }
+  }
+
+  ///Programming excercise: Repeat password
 }
