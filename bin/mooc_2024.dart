@@ -1,17 +1,22 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Password: ");
-  String password = stdin.readLineSync()!;
+  int correctPIN = 4321;
+  int attempts = 0;
 
   while (true) {
-    stdout.write("Repeat password: ");
-    String repeatPassword = stdin.readLineSync()!;
+    stdout.write("PIN: ");
+    int enteredPIN = int.parse(stdin.readLineSync()!);
+    attempts++;
 
-    if (repeatPassword != password) {
-      print("They do not match!");
+    if (enteredPIN != correctPIN) {
+      print("Wrong");
     } else {
-      print("User account created!");
+      if (attempts == 1) {
+        print("Correct! It only took you one single attempt!");
+      } else {
+        print("Correct! It took you $attempts attempts");
+      }
       break;
     }
   }
