@@ -79,4 +79,25 @@ void main() {
       break;
     }
   }
+
+  //Programming excercise: The next leap year
+  stdout.write("Year: ");
+  int year = int.parse(stdin.readLineSync()!);
+
+  int nextYear = year + 1;
+  int leapYear;
+
+  while (true) {
+    if (nextYear % 4 == 0) {
+      leapYear = nextYear;
+      break;
+    }
+    if (nextYear % 100 != 0 && nextYear % 400 == 0) {
+      leapYear = nextYear;
+      break;
+    }
+    nextYear++;
+  }
+
+  print("The next leap year after $year is $leapYear");
 }
