@@ -80,7 +80,7 @@ void main() {
     }
   }
 
-  //Programming excercise: The next leap year
+  ///Programming excercise: The next leap year
   stdout.write("Year: ");
   int year = int.parse(stdin.readLineSync()!);
 
@@ -101,7 +101,7 @@ void main() {
 
   print("The next leap year after $year is $leapYear");
 
-  //Programming excercise: Story
+  ///Programming excercise: Story
   //Part 1
   String story = "";
 
@@ -133,4 +133,17 @@ void main() {
   }
 
   print(words.join(" "));
+
+  ///Programming excercise: Working with numbers
+  //Pre-task
+  print("Please type in integer numbers. Type in 0 to finish.");
+
+  while (true) {
+    stdout.write("Number: ");
+    int number = int.parse(stdin.readLineSync()!);
+
+    if (number == 0) {
+      break;
+    }
+  }
 }

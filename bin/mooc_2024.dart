@@ -1,18 +1,14 @@
 import 'dart:io';
 
 void main() {
-  List<String> words = [];
+  print("Please type in integer numbers. Type in 0 to finish.");
 
   while (true) {
-    stdout.write("Please type in a word: ");
-    String input = stdin.readLineSync()!;
+    stdout.write("Number: ");
+    int number = int.parse(stdin.readLineSync()!);
 
-    if (input == "end" || (words.isNotEmpty && input == words.last)) {
+    if (number == 0) {
       break;
     }
-
-    words.add(input);
   }
-
-  print(words.join(" "));
 }
