@@ -18,17 +18,19 @@ void main() {
   // print(story);
 
   // Part 2
-  List<String> sentences = [];
+  List<String> words = [];
+  String? input;
 
   while (true) {
     stdout.write("Please type in a word: ");
-    String words = stdin.readLineSync()!;
+    input = stdin.readLineSync()!;
 
-    if (words != "end") {
-      sentences.add(words);
-    } else {
-      print(sentences.join(" "));
+    if (input == "end" || input == words.last) {
       break;
     }
+
+    words.add(input);
   }
+
+  print(words.join(" "));
 }

@@ -102,4 +102,19 @@ void main() {
   print("The next leap year after $year is $leapYear");
 
   //Programming excercise: Story
+  //Part 1
+  String story = "";
+
+  while (true) {
+    stdout.write("Please type in a word: ");
+    String word = stdin.readLineSync()!;
+
+    if (word != "end") {
+      story += word + " ";
+    } else {
+      break;
+    }
+  }
+
+  print(story);
 }
