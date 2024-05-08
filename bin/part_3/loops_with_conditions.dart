@@ -72,4 +72,6 @@ void main() {
   }
 
   print(sumAll);
+
+  //Programming exercise: The sum of consecutive numbers, version 2
 }
