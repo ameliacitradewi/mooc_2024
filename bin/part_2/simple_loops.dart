@@ -171,6 +171,8 @@ void main() {
 
   int hitNumber = 0;
   int totalNumber = 0;
+  int positiveNumber = 0;
+  int negativeNumber = 0;
 
   while (true) {
     stdout.write("Number: ");
@@ -190,4 +192,8 @@ void main() {
 
   //Part 3: Mean
   print("The mean of the numbers is ${totalNumber / hitNumber}");
+
+  //Part 4: Positive and negatives
+  print("Positive numbers $positiveNumber");
+  print("Negative numbers $negativeNumber");
 }
