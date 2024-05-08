@@ -33,4 +33,15 @@ void main() {
     integerNumbers++;
     print(integerNumbers);
   }
+
+  //Programming exercise: Powers of two
+  stdout.write("Upper limit: ");
+  int limit = int.parse(stdin.readLineSync()!);
+
+  int num = 1;
+
+  while (num <= limit) {
+    print(num);
+    num *= 2;
+  }
 }
