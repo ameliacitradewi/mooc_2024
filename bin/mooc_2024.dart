@@ -21,4 +21,5 @@ void main() {
   print("... the program asks for numbers");
   print("Numbers type in $hitNumber");
   print("The sum of the numbers is $totalNumber");
+  print("The mean of the numbers is ${totalNumber / hitNumber}");
 }

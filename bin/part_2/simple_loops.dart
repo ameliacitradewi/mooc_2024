@@ -189,4 +189,5 @@ void main() {
   print("The sum of the numbers is $totalNumber");
 
   //Part 3: Mean
+  print("The mean of the numbers is ${totalNumber / hitNumber}");
 }
