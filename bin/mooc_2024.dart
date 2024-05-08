@@ -1,12 +1,14 @@
 import 'dart:io';
 
 void main() {
-  int number = 1;
+  print("Are you ready?");
+  stdout.write("Please type in a number: ");
+  int numbers = int.parse(stdin.readLineSync()!);
 
-  while (number < 31) {
-    if (number % 2 == 0) {
-      print(number);
-    }
-    number++;
+  while (numbers >= 1) {
+    print(numbers);
+    numbers--;
   }
+
+  print("Now!");
 }
