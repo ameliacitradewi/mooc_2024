@@ -47,15 +47,17 @@ void main() {
 
   //Programming exercise: Powers of base n
   stdout.write("Upper limit: ");
-  int limit = int.parse(stdin.readLineSync()!);
+  int highLimit = int.parse(stdin.readLineSync()!);
 
   stdout.write("Base: ");
   int base = int.parse(stdin.readLineSync()!);
 
-  int num = 1;
+  int multiplied = 1;
 
-  while (num <= limit) {
-    print(num);
-    num *= base;
+  while (multiplied <= highLimit) {
+    print(multiplied);
+    multiplied *= base;
   }
+
+  //Programming exercise: The sum of consecutive numbers, version 1
 }
