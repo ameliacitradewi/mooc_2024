@@ -44,4 +44,18 @@ void main() {
     print(num);
     num *= 2;
   }
+
+  //Programming exercise: Powers of base n
+  stdout.write("Upper limit: ");
+  int limit = int.parse(stdin.readLineSync()!);
+
+  stdout.write("Base: ");
+  int base = int.parse(stdin.readLineSync()!);
+
+  int num = 1;
+
+  while (num <= limit) {
+    print(num);
+    num *= base;
+  }
 }
