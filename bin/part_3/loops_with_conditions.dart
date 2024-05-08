@@ -22,4 +22,15 @@ void main() {
   }
 
   print("Now!");
+
+  //Programming exercise: Numbers
+  int integerNumbers = 0;
+
+  stdout.write("Upper limit: ");
+  int upperLimit = int.parse(stdin.readLineSync()!);
+
+  while (integerNumbers < upperLimit - 1) {
+    integerNumbers++;
+    print(integerNumbers);
+  }
 }
