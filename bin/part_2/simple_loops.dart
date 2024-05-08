@@ -169,7 +169,7 @@ void main() {
   //Part 2: Sum
   print("Please type in integer numbers. Type in 0 to finish.");
 
-  int hitNumber = 0;
+  int hitNumbers = 0;
   int totalNumber = 0;
   int positiveNumber = 0;
   int negativeNumber = 0;
@@ -179,7 +179,7 @@ void main() {
     int number = int.parse(stdin.readLineSync()!);
 
     if (number != 0) {
-      hitNumber += 1;
+      hitNumbers += 1;
       totalNumber += number;
     } else {
       break;
@@ -187,11 +187,11 @@ void main() {
   }
 
   print("... the program asks for numbers");
-  print("Numbers type in $hitNumber");
+  print("Numbers type in $hitNumbers");
   print("The sum of the numbers is $totalNumber");
 
   //Part 3: Mean
-  print("The mean of the numbers is ${totalNumber / hitNumber}");
+  print("The mean of the numbers is ${totalNumber / hitNumbers}");
 
   //Part 4: Positive and negatives
   print("Positive numbers $positiveNumber");
