@@ -81,4 +81,6 @@ void main() {
 
   int textLength = inputText.length;
   print("-" * textLength);
+
+  ///Programming exercise: Right-aligned
 }
