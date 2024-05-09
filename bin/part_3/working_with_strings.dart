@@ -48,4 +48,10 @@ void main() {
   } else {
     print("The second and the second to last characters are different");
   }
+
+  ///Programming exercise: A line of hashes
+  stdout.write("Width: ");
+  int width = int.parse(stdin.readLineSync()!);
+
+  print("#" * width);
 }
