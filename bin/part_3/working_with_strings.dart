@@ -95,4 +95,9 @@ void main() {
   }
 
   ///Programming exercise: A frame word
+  stdout.write("Word: ");
+  String frameWord = stdin.readLineSync()!;
+
+  int widthFrame = 30;
+  int fwLength = frameWord.length;
 }
