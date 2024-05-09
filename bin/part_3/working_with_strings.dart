@@ -93,4 +93,6 @@ void main() {
     int difference = minLength - inputLength;
     print("*" * difference + textInput);
   }
+
+  ///Programming exercise: A frame word
 }
