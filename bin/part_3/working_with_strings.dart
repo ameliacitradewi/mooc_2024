@@ -1,8 +1,14 @@
-void main() {
-  int layer = 10;
-  String row = "*";
+import 'dart:io';
 
-  while (layer > 0) {
-    print(" " * layer + row);
-  }
+void main() {
+  ///Programming exercise: String multiplied
+  stdout.write("Please type in a string: ");
+  String text = stdin.readLineSync()!;
+
+  stdout.write("Please type in an amount: ");
+  int multiplied = int.parse(stdin.readLineSync()!);
+
+  print(text * multiplied);
+
+  ///Programming exercise: The longer string
 }
