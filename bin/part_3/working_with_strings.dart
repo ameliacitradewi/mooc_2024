@@ -35,4 +35,6 @@ void main() {
     print(inputWord[wordLength - 1]);
     wordLength--;
   }
+
+  ///Programming exercise: Second and second to last characters
 }
