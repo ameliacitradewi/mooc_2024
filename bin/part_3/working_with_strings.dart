@@ -54,4 +54,6 @@ void main() {
   int width = int.parse(stdin.readLineSync()!);
 
   print("#" * width);
+
+  ///Programming exercise: A rectangle of hashes
 }
