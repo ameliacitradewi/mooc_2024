@@ -2,12 +2,14 @@ import 'dart:io';
 
 void main() {
   stdout.write("Please type in a string: ");
-  String inputWord = stdin.readLineSync()!;
+  String word = stdin.readLineSync()!;
 
-  int wordLength = inputWord.length;
+  String secondFirst = word[1];
+  String secondLast = word[word.length - 2];
 
-  while (wordLength > 0) {
-    print(inputWord[wordLength - 1]);
-    wordLength--;
+  if (secondFirst == secondLast) {
+    print("The second and the second last characters are $secondLast");
+  } else {
+    print("The second and the second to last characters are different");
   }
 }
