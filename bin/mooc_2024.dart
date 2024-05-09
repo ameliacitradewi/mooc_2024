@@ -1,14 +1,9 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Please type in a string: ");
-  String textInput = stdin.readLineSync()!;
+  stdout.write("Word: ");
+  String frameWord = stdin.readLineSync()!;
 
-  int inputLength = textInput.length;
-  int minLength = 20;
-
-  if (inputLength <= minLength) {
-    int difference = minLength - inputLength;
-    print("*" * difference + textInput);
-  }
+  int widthFrame = 30;
+  int fwLength = frameWord.length;
 }
