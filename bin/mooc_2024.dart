@@ -1,13 +1,12 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Please type in a string: ");
-  String wordString = stdin.readLineSync()!;
-  int indexString = wordString.length;
+  stdout.write('Please type in a string: ');
+  String strings = stdin.readLineSync()!;
 
-  int nextIndex = 0;
-  while (nextIndex <= indexString) {
-    print(wordString.substring(0, nextIndex));
-    nextIndex++;
+  int i = 0;
+  while (i <= strings.length) {
+    print(strings.substring(strings.length - i));
+    i++;
   }
 }
