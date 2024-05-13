@@ -108,4 +108,6 @@ void main() {
   print(frame);
   print("*${" " * leftSpace}$frameWord${" " * rightSpace}*");
   print(frame);
+
+  ///Programming exercise: Substrings, part 1
 }
