@@ -119,4 +119,6 @@ void main() {
     print(wordString.substring(0, nextIndex));
     nextIndex++;
   }
+
+  ///Programming exercise: Substrings, part 2
 }
