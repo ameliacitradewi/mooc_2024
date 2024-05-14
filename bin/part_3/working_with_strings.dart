@@ -129,4 +129,20 @@ void main() {
     print(strings.substring(strings.length - i));
     i++;
   }
+
+  ///Programming exercise: Does it contain vowels
+  stdout.write("Please type in a string: ");
+  String inputString = stdin.readLineSync()!;
+
+  void checkVowels(String vowels) {
+    if (inputString.contains(vowels)) {
+      print("$vowels found");
+    } else {
+      print("$vowels not found");
+    }
+  }
+
+  checkVowels("a");
+  checkVowels("e");
+  checkVowels("o");
 }
