@@ -173,7 +173,7 @@ void main() {
 
   if (indexAlphabet != -1) {
     while (indexAlphabet != -1) {
-      if (inputs.length - indexAlphabet >= 3) {
+      if (indexChar <= word.length - 3) {
         String nextWord = inputs.substring(indexAlphabet, indexAlphabet + 3);
         print(nextWord);
         indexAlphabet = inputs.indexOf(alphabet, indexAlphabet + 1);

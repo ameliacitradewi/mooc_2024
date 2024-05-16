@@ -1,23 +1,21 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Please type in a word: ");
-  String inputs = stdin.readLineSync()!;
+  stdout.write("word: ");
+  String word = stdin.readLineSync()!;
 
-  stdout.write("Please type in character: ");
-  String alphabet = stdin.readLineSync()!;
+  stdout.write("Char: ");
+  String char = stdin.readLineSync()!;
 
-  int indexAlphabet = inputs.indexOf(alphabet);
+  int indexChar = word.indexOf(char);
 
-  if (indexAlphabet != -1) {
-    while (indexAlphabet != -1) {
-      if (inputs.length - indexAlphabet >= 3) {
-        String nextWord = inputs.substring(indexAlphabet, indexAlphabet + 3);
-        print(nextWord);
-        indexAlphabet = inputs.indexOf(alphabet, indexAlphabet + 1);
-      } else {
-        break;
-      }
+  while (indexChar != -1) {
+    if (indexChar <= word.length - 3) {
+      String nextWord = word.substring(indexChar, indexChar + 3);
+      print(nextWord);
+      indexChar = word.indexOf(char, indexChar + 1);
+    } else {
+      break;
     }
   }
 }
