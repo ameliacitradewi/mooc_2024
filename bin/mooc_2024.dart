@@ -1,7 +1,5 @@
 import 'dart:io';
 
-import 'part_1/arithmetic_operations.dart';
-
 void main() {
   stdout.write("Please type in a string: ");
   String mainString = stdin.readLineSync()!;
