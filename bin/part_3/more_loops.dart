@@ -15,4 +15,14 @@ void main() {
     }
     i++;
   }
+
+  ///Programming excercise: First letters of words
+  stdout.write("Please type in a sentence: ");
+  String sentences = stdin.readLineSync()!;
+
+  List<String> words = sentences.split(" ");
+
+  for (String word in words) {
+    print(word[0]);
+  }
 }
