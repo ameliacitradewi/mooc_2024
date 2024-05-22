@@ -4,13 +4,14 @@ void main() {
   stdout.write("Please type in a number: ");
   int number = int.parse(stdin.readLineSync()!);
 
-  while (number > 0) {
-    int i = 0;
-    while (i < number) {
-      stdout.write("$i ");
-      i += 1;
+  int i = 1;
+
+  while (i <= number) {
+    int j = 1;
+    while (j <= number) {
+      print("$i * $j = ${i * j}");
+      j++;
     }
-    print("");
-    number -= 1;
+    i++;
   }
 }
