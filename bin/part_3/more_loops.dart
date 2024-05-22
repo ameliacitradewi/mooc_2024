@@ -10,7 +10,7 @@ void main() {
   while (i <= number) {
     int j = 1;
     while (j <= number) {
-      print("$i * $j = ${i * j}");
+      print("$i x $j = ${i * j}");
       j++;
     }
     i++;
