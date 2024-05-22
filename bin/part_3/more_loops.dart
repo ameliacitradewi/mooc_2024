@@ -27,6 +27,9 @@ void main() {
   }
 
   ///Programming excercise: Factorial
+  // factorial using recursion
+  // check if the input == 1, if true return 1
+  // if false, return input * factorial (input - 1)
   int factorial(int n) {
     return n == 1 ? 1 : n * factorial(n - 1);
   }
