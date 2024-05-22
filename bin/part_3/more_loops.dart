@@ -38,11 +38,11 @@ void main() {
     stdout.write("Please type in a number: ");
     int input = int.parse(stdin.readLineSync()!);
 
-    if (input <= 0) {
+    if (input > 0) {
+      print("The factorial of the number $input is ${factorial(input)}");
+    } else {
       print("Thanks and bye!");
       break;
-    } else {
-      print("The factorial of the number $input is ${factorial(input)}");
     }
   }
 
