@@ -202,4 +202,24 @@ void main() {
       print("The second occurrence of the substring is at index $secondIndex.");
     }
   }
+
+  ///Programming exercise: Factorial
+  // factorial using recursion
+  int factorial(int n) {
+    return n == 1 ? 1 : n * factorial(n - 1);
+    // check if the input == 1, if true return 1
+    // if false : return input * factorial (input - 1)
+  }
+
+  while (true) {
+    stdout.write("Please type in a number: ");
+    int input = int.parse(stdin.readLineSync()!);
+
+    if (input > 0) {
+      print("The factorial of the number $input is ${factorial(input)}");
+    } else {
+      print("Thanks and bye!");
+      break;
+    }
+  }
 }
